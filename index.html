@@ -48,7 +48,7 @@
 
       <section class="hiro">
          <h1 class="hiro-title">Эффективные решения<br> для вашего бизнеса</h1>
-         <button class="btn" type="button"> Заказать услугу</button>
+         <button class="btn" type="button" data-modal-open> Заказать услугу</button>
       </section>
 
       <section class=" unit ">
@@ -403,6 +403,16 @@
 
       </div>
    </footer>
+   <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+         <button type="button" class="close" data-modal-close>
+            <svg class="icon-close" width="11" height="11">
+               <use href="./images/icons/symbol-defs.svg#icon-close-black"></use>
+            </svg>
+         </button>
+      </div>
+   </div>
+
    <script src="./js/modal.js"></script>
 
 </body>
