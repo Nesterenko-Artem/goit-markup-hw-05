@@ -365,6 +365,8 @@ section.unit {
    align-items: center;
    justify-content: center;
    color: #afb1b8;
+    transition: color 250ms, background 200ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .masters-soc-list {
@@ -383,8 +385,7 @@ section.unit {
 .masters-soc-link:focus {
    background: var(--color-icon);
    color: #fff;
-   transition: color 250ms, background 200ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 /* --------- section 3---------------- */
@@ -407,6 +408,8 @@ section.unit {
    color: #afb1b8;
    border: 1px solid #afb1b8;
    border-radius: 4px;
+   transition: color 250ms, border-color 200ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .company-incons {
    fill: currentColor;
@@ -416,8 +419,7 @@ section.unit {
 .company-list-link:focus {
    color: var(--color-icon);
    border-color: var(--color-icon);
-   transition: color 250ms, border-color 200ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 
 /* ----------------------- section 4 ---------------- */
@@ -511,6 +513,9 @@ a[href*="https"] {
    min-width: 73px;
    background: #f5f4fa;
    border-radius: 4px;
+    transition: color 250ms, background 200ms, box-shadow 200ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .btn-items:not(:last-child) {
    margin-right: 8px;
@@ -555,9 +560,6 @@ a[href*="https"] {
 }
 .btn-items button:hover,
 .btn-items button:focus {
-   transition: color 250ms, background 200ms, box-shadow 200ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
    display: block;
    text-align: center;
    background: var(--color-icon);
@@ -584,6 +586,8 @@ a[href*="https"] {
    margin-right: 30px;
    margin-bottom: 30px;
    background-color: #fff;
+   
+    
 }
 .thumb-hidden {
    position: relative;
@@ -592,6 +596,8 @@ a[href*="https"] {
 .hiden-card {
    position: absolute;
    transform: translateY(100%);
+    transition: transform 350ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
    top: 0;
    left: 0;
@@ -607,11 +613,7 @@ a[href*="https"] {
    letter-spacing: 0.03em;
 }
 
-.grid-items:hover .hiden-card {
-   transform: translateY(0);
-   transition: transform 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 .grid-items:nth-child(3n) {
    margin-right: 0;
@@ -623,6 +625,11 @@ a[href*="https"] {
 .grid-items a:focus {
    display: inline-block;
    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.grid-items:hover .hiden-card,
+.grid-items:focus .hiden-card {
+   transform: translateY(0);
+  
 }
 
 /* -------------- backdrop ----------- */
