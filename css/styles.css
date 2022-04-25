@@ -365,7 +365,7 @@ section.unit {
    align-items: center;
    justify-content: center;
    color: #afb1b8;
-    transition: color 250ms, background 200ms;
+   transition: color 250ms, background 200ms;
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -385,7 +385,6 @@ section.unit {
 .masters-soc-link:focus {
    background: var(--color-icon);
    color: #fff;
-  
 }
 
 /* --------- section 3---------------- */
@@ -419,7 +418,6 @@ section.unit {
 .company-list-link:focus {
    color: var(--color-icon);
    border-color: var(--color-icon);
-   
 }
 
 /* ----------------------- section 4 ---------------- */
@@ -478,7 +476,7 @@ a[href*="https"] {
 .soc {
    background: rgba(255, 255, 255, 0.1);
    color: #ffffff;
-   transition:background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ------------------ portfolio------------------- */
@@ -514,9 +512,8 @@ a[href*="https"] {
    min-width: 73px;
    background: #f5f4fa;
    border-radius: 4px;
-    transition: color 250ms, background 200ms, box-shadow 200ms;
+   transition: color 250ms, background 200ms, box-shadow 200ms;
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 .btn-items:not(:last-child) {
    margin-right: 8px;
@@ -587,8 +584,6 @@ a[href*="https"] {
    margin-right: 30px;
    margin-bottom: 30px;
    background-color: #fff;
-   
-    
 }
 .thumb-hidden {
    position: relative;
@@ -597,7 +592,7 @@ a[href*="https"] {
 .hiden-card {
    position: absolute;
    transform: translateY(100%);
-    transition: transform 350ms;
+   transition: transform 350ms;
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
    top: 0;
@@ -614,8 +609,6 @@ a[href*="https"] {
    letter-spacing: 0.03em;
 }
 
-
-
 .grid-items:nth-child(3n) {
    margin-right: 0;
 }
@@ -630,7 +623,6 @@ a[href*="https"] {
 .grid-items a:hover .hiden-card,
 .grid-items a:focus .hiden-card {
    transform: translateY(0);
-  
 }
 
 /* -------------- backdrop ----------- */
@@ -649,7 +641,6 @@ a[href*="https"] {
 
    transition-duration: 300ms;
    transition-timing-function: ease;
-
 }
 .backdrop.is-hidden {
    opacity: 0;
